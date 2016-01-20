@@ -8,5 +8,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN wget https://github.com/silk-framework/silk/releases/download/release-2.6.1/silk-workbench-2.6.1.tgz && \
 	tar zxvf silk-workbench-2.6.1.tgz && \
-	rm -Rf /silk-workbench--2.6.1.tgz && \
-	./silk-workbench-2.6.1/bin/silk-workbench
+	rm -Rf /silk-workbench--2.6.1.tgz
+
+CMD ["./silk-workbench-2.6.1/bin/silk-workbench"]
